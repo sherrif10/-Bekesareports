@@ -32,12 +32,12 @@ public class MtuhaStaticCohortsUtil {
 	
 	public static void setupHtsCohorts() {
 		setupCohortType();
-		setupHtsCohort(MTUHA_PRE_TEST_COHORT_UUID, MTUHA_PRE_TEST_COHORT_NAME);
-		setupHtsCohort(MTUHA_WAITING_FOR_TEST_COHORT_UUID, MTUHA_WAITING_FOR_TEST_COHORT_NAME);
-		setupHtsCohort(MTUHA_POST_TEST_COHORT_UUID, MTUHA_POST_TEST_COHORT_NAME);
+		setupMTUHACohort(MTUHA_PRE_TEST_COHORT_UUID, MTUHA_PRE_TEST_COHORT_NAME);
+		setupMTUHACohort(MTUHA_WAITING_FOR_TEST_COHORT_UUID, MTUHA_WAITING_FOR_TEST_COHORT_NAME);
+		setupMTUHACohort(MTUHA_POST_TEST_COHORT_UUID, MTUHA_POST_TEST_COHORT_NAME);
 	}
 	
-	public static void setupHtsCohort(String uuid, String name) {
+	public static void setupMTUHACohort(String uuid, String name) {
 		CohortM cm = new CohortM();
 		cm.setUuid(uuid);
 		cm.setName(name);

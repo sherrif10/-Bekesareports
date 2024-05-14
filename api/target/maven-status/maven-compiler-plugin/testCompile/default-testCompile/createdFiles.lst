@@ -1,2 +1,3 @@
 org/openmrs/module/bekesareports/BekesareportsServiceTest.class
+org/openmrs/module/bekesareports/CohortManagerUtilTest.class
 org/openmrs/module/bekesareports/dao/BekesareportsDaoTest.class

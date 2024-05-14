@@ -5,32 +5,32 @@ import org.openmrs.module.reporting.cohort.definition.CohortDefinition;
 import org.openmrs.module.reporting.cohort.definition.EncounterCohortDefinition;
 import org.openmrs.module.reporting.common.MessageUtil;
 
-import static org.openmrs.module.bekesareports.BekesaReportsConstant.MTUHA_CLIENTS;
-import static org.openmrs.module.bekesareports.BekesaReportsConstant.MTUHA_ENCOUNTER_TYPE;
+import static org.openmrs.module.bekesareports.BekesaReportsConstant.CHOLERA_CLIENTS;
+import static org.openmrs.module.bekesareports.BekesaReportsConstant.CHOLERA_ENCOUNTER_TYPE;
 
 import org.openmrs.api.context.Context;
 
-public class mtuhaClients extends BaseCohortDefinitionManager {
+public class ChorelaClients extends BaseCohortDefinitionManager {
 	
 	@Override
 	public String getUuid() {
-		return MTUHA_CLIENTS;
+		return CHOLERA_CLIENTS;
 	}
 	
 	@Override
 	public String getName() {
-		return MessageUtil.translate("bekesareports.clients.mtuha.reportName");
+		return MessageUtil.translate("bekesareports.clients.chorela.reportName");
 	}
 	
 	@Override
 	public String getDescription() {
-		return MessageUtil.translate("bekesareports.clients.mtuha.reportDescription");
+		return MessageUtil.translate("bekesareports.clients.cholera.reportDescription");
 	}
 	
 	@Override
 	public CohortDefinition constructCohortDefinition() {
 		EncounterCohortDefinition cd = (EncounterCohortDefinition) super.constructCohortDefinition();
-		cd.addEncounterType(Context.getEncounterService().getEncounterTypeByUuid(MTUHA_ENCOUNTER_TYPE));
+		cd.addEncounterType(Context.getEncounterService().getEncounterTypeByUuid(CHOLERA_ENCOUNTER_TYPE));
 		return cd;
 	}
 	

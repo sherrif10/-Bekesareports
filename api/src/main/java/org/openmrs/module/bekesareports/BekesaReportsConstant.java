@@ -3,9 +3,9 @@ package org.openmrs.module.bekesareports;
 public class BekesaReportsConstant {
 	
 	// create an encounter type for mhuha
-	public final static String MTUHA_CLIENTS = "7c1b4906-1caf-4a8e-a51d-7abdbb896805";
+	public final static String CHOLERA_CLIENTS = "122604AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 	
-	public final static String MTUHA_ENCOUNTER_TYPE = "";
+	public static final String CHOLERA_ENCOUNTER_TYPE = "67a71486-1a54-468f-ac3e-7091a9a79584";
 	
 	public final static String FEMALE = "";
 	

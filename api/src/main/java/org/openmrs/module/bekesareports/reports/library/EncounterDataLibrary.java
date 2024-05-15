@@ -56,7 +56,7 @@ public class EncounterDataLibrary extends BaseDefinitionLibrary<EncounterDataDef
 	
 	public EncounterWithCodedObsCohortDefinition getHtsEncountersCohort(char c) {
 		EncounterWithCodedObsCohortDefinition ecd = new EncounterWithCodedObsCohortDefinition();
-		ecd.addEncounterType(encounterService.getEncounterTypeByUuid(MTUHA_ENCOUNTER_TYPE));
+		ecd.addEncounterType(encounterService.getEncounterTypeByUuid(CHOLERA_ENCOUNTER_TYPE));
 		ecd.addEncounterType(encounterService.getEncounterTypeByUuid(MTUHA_RETROSPECTIVE_ENCOUNTER_TYPE));
 		ecd.setConcept(conceptService.getConceptByUuid(FINAL_HIV_RESULT));
 		if (c == '+') {

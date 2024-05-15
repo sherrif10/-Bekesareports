@@ -19,8 +19,8 @@ public class BekesareportsConfig {
 	
 	public final static String MODULE_PRIVILEGE = "Bekesareports Privilege";
 	
-	public final static String MTUHA_ENCOUNTER_TYPE = "";
+	public final static String CHOLERA_ENCOUNTER_TYPE = "";
 	
-	public final static String MTUHA_CLIENTS = "";
+	public final static String CHOLERA_CLIENTS = "";
 	
 }
